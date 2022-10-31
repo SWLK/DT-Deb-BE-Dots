@@ -1,0 +1,25 @@
+---
+version: 1.0.0
+default_namespace: SWLK
+config_home_path: /home/sheung/.config/hoard
+trove_path: /home/sheung/.config/hoard/trove.yml
+query_prefix: "  >"
+ 
+primary_color:
+  - 136
+  - 60
+  - 67
+secondary_color:
+  - 210
+  - 208
+  - 116
+tertiary_color:
+  - 19
+  - 19
+  - 19
+command_color:
+  - 222
+  - 177
+  - 79
+parameter_token: "#"
+read_from_current_directory: false

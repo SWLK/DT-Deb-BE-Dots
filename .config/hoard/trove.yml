@@ -1,0 +1,138 @@
+---
+version: 1.0.0
+commands:
+  - name: fsck-fallback
+    namespace: SYS_FB
+    tags:
+      - fallback
+      - system
+    command: fsck -y
+    description: fallback in case failed shutdown
+  - name: startx-fallback
+    namespace: SYS_FB
+    tags:
+      - system
+      - fallback
+    command: startx
+    description: fallback in case startx fails
+  - name: nnn
+    namespace: NAV
+    tags:
+      - system
+      - navigation
+    command: nnn
+    description: fs navigation with nnn
+  - name: neofetch
+    namespace: SWLK
+    tags:
+      - tests
+    command: neofetch
+    description: neofetch
+  - name: Cmatrix
+    namespace: Bloat
+    tags:
+      - ""
+    command: cmatrix
+    description: nothing
+  - name: Neo
+    namespace: Bloat
+    tags:
+      - ""
+    command: neo
+    description: nothing
+  - name: Btm
+    namespace: SWLK
+    tags:
+      - ""
+    command: btm
+    description: nothing
+  - name: Htop
+    namespace: SWLK
+    tags:
+      - ""
+    command: htop
+    description: nothing
+  - name: Cbonsai
+    namespace: Bloat
+    tags:
+      - ""
+    command: cbonsai
+    description: nothing
+  - name: Edit-Bashrc
+    namespace: Script-Edit
+    tags:
+      - ""
+    command: nvim .bashrc
+    description: edit .bashrc
+  - name: Edit-i3config
+    namespace: Script-Edit
+    tags:
+      - ""
+    command: nvim /home/sheung/.config/i3/config
+    description: edit i3 config file
+  - name: Xboxdrv-Off
+    namespace: SWLK
+    tags:
+      - Gamepad
+    command: sudo pkill xboxdrv
+    description: Deactivates xboxdrv
+  - name: Xboxdrv-On
+    namespace: SWLK
+    tags:
+      - Gamepad
+    command: /home/sheung/bin/template.sh
+    description: Activates xboxdrv (template)
+  - name: Brightness
+    namespace: SYS
+    tags:
+      - ""
+    command: "bl #"
+    description: Brightness control
+  - name: Edit-NvimConfig
+    namespace: Script-Edit
+    tags:
+      - ""
+    command: nvim /home/sheung/.config/nvim/init.vim
+    description: edit nvim init.vim
+  - name: LoopHero
+    namespace: Games
+    tags:
+      - ""
+    command: /home/sheung/Downloads/loop_hero/data/noarch/start.sh
+    description: Launches Loop Hero
+  - name: vvvvv
+    namespace: Games
+    tags:
+      - ""
+    command: /home/sheung/Downloads/vvvvv/data/noarch/start.sh
+    description: Launches vvvvv
+  - name: Sunvox
+    namespace: Programs
+    tags:
+      - ""
+    command: /home/sheung/Downloads/sunvox/sunvox/linux_arm64/sunvox
+    description: Launches Sunvox
+  - name: DwarfFortress
+    namespace: Games
+    tags:
+      - ""
+    command: /home/sheung/Downloads/LinuxDwarfPack-0.47.05-r5/df_47_05_linux/df
+    description: Launches Dwarf Fortress
+  - name: LinuxNoobPack
+    namespace: Games
+    tags:
+      - ""
+    command: python /home/sheung/Downloads/LinuxDwarfPack-0.47.05-r5/launch.py
+    description: Launches LNP for DF
+  - name: Digital
+    namespace: Programs
+    tags:
+      - ""
+    command: /home/sheung/Downloads/Digital/Digital.sh
+    description: Launches Digital
+  - name: UnDUNE2
+    namespace: Games
+    tags:
+      - ""
+    command: /home/sheung/Downloads/UnDUNE2_raspi/UnDUNE2_64
+    description: Launches UnDUNE2
